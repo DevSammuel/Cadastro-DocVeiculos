@@ -1,0 +1,43 @@
+table{
+    border-collapse: collapse;
+    width: 50%;
+    color: white;
+	background-color:#cecece;
+    font-weight: bold;
+    font-family: sans-serif;
+    
+}
+
+
+h1{
+    font-family: sans-serif;
+    text-align: left;
+	font-size: 50pt;
+	color: #16010185;
+	text-shadow: 1px 1px 1px rgba(197, 197, 197, 0.6);
+
+}
+
+td, th{
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    color:black;
+    font-family: sans-serif;
+}
+
+h2{
+    font-family: sans-serif;
+    text-align: left;
+	font-size: 35pt;
+	color: #16010185;
+	text-shadow: 1px 1px 1px rgba(197, 197, 197, 0.6);
+}
+p{
+    width: 500px;
+    color:black;
+	font-family: sans-serif;
+	font-weight: normal;
+	font-size: 20pt;
+	background-color: rgba(255,255,255,.8);
+}

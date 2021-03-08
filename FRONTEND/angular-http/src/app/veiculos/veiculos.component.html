@@ -1,0 +1,46 @@
+<h2>Cadastro de veiculos</h2>
+<hr>
+<form>
+    <p>Placa: <input type="text" name="placa"[(ngModel)]="veiculo.placa"></p>
+    <p>Chassi: <input type="text" name="chassi"[(ngModel)]="veiculo.chassi"></p>
+    <p>Renavam: <input type="text" name="renavam"[(ngModel)]="veiculo.renavam"></p>
+    <p>Modelo: <input type="text" name="modelo"[(ngModel)]="veiculo.modelo"></p>
+    <p>Marca: <input type="text" name="marca"[(ngModel)]="veiculo.marca"></p>
+    <p>Ano: <input type="text" name="ano"[(ngModel)]="veiculo.ano"></p>
+    <button type="button" (click)="cadastrar()">Cadastrar</button>
+
+</form>
+
+
+<h2>Veiculos cadastrados</h2>
+<hr>
+<table>
+
+    <tr>
+        <th>#id</th>
+        <th>Placa</th>
+        <th>Chassi</th>
+        <th>Renavam</th>
+        <th>Modelo</th>
+        <th>Marca</th>
+        <th>Ano</th>
+        <th>Açôes</th>
+
+    </tr>
+
+    <tr  *ngFor="let veiculo of veiculos">
+        <td>{{veiculo.id}}</td>
+        <td>{{veiculo.placa}}</td>
+        <td>{{veiculo.chassi}}</td>
+        <td>{{veiculo.renavam}}</td>
+        <td>{{veiculo.modelo}}</td>
+        <td>{{veiculo.marca}}</td>
+        <td>{{veiculo.ano}}</td>
+        <td><button (click)="atualizar(veiculo.id)">Atualizar</button>
+            <button (click)="remover(veiculo.id)">Remover</button>
+        </td>
+
+       
+    </tr>
+</table>
+
